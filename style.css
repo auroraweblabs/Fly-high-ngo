@@ -32,6 +32,8 @@ html {
     width: 100%;
     z-index: 99;
     background-color: white;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
 
     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 }
@@ -160,7 +162,10 @@ section {
     width: 100%;
 }
 
-
+#about{
+    padding-top: 3%;
+    padding-bottom: 7%;
+}
 #about img {
     
     border-radius: 20px;
@@ -228,7 +233,9 @@ section {
 }
 #food-menu-section{
     background-color: rgb(255, 227, 227);
-    padding-bottom: 50px;
+    padding-bottom: 21px;
+    border-radius: 20px;
+    padding-top: 20px;
 }
 
 
@@ -348,7 +355,7 @@ section {
 }
 
 .review-content {
-    padding: 3rem;
+    padding: 1rem;
     border-bottom: .125rem solid var(--grey);
     position: relative;
     text-align: center;
@@ -609,6 +616,7 @@ section {
 
     .about {
        background-color: rgb(255, 227, 227);
+       
         
     }
 
@@ -821,9 +829,17 @@ section {
 
 .info{
     font-size: 10px;
+    text-align: left;
 }
 .info1{
     font-size: 15px;
+    text-align: left;
+    margin-bottom: -70px;
+}
+.info2{
+    font-size: 15px;
+    text-align: left;
+    
 }
 .event-txt{
     text-align: end;
@@ -847,7 +863,7 @@ section {
   }
   
   /* Responsive columns */
-  @media screen and (max-width: 600px) {
+  @media screen and (max-width: 750px) {
     .column {
       width: 100%;
       display: block;
@@ -911,7 +927,7 @@ section {
 .btn-readmore2{
     background-color:var(--primary-color);
     color: rgb(255, 255, 255);
-    width: 250px;
+    width: 160px;
     height: 40px;
     margin-bottom: 10px;
     font-size: 25px;
@@ -927,13 +943,25 @@ section {
 
 .marketplacebanner{
    
-    
+    max-width: 100%;
+    height: auto;
+  
     border-radius: 20px;
+}
+.try{
+    padding: 10px;
 }
 .socialplatform{
     text-align: center;
     margin-top: 20px;
 
+}
+.logo img{
+    height: 80px;
+    width: 50%;
+    margin-top: -18px;
+    margin-bottom: -24px;
+    margin-left: 82px;
 }
 
   
