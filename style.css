@@ -860,6 +860,18 @@ section {
         font-size: 30px;
         
     }
+    .food-menu p {
+        margin: 2rem 0;
+        padding: 10px;
+        font-size: 20px;
+    }
+    .about-slogan {
+        text-align: center;
+        margin-bottom: 10px;
+    }
+    .info{
+        font-size: 15px;
+    }
     
   }
   
