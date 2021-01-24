@@ -595,6 +595,7 @@ section {
     display: none;
 }
 
+
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
 
@@ -652,20 +653,33 @@ section {
     }
 
     /* MOBILE NAV */
+    .bottom-navbar {
+        position: fixed;
+        bottom: 0px;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        width: 100%;
+        background: #fff;
+        border-radius: 30px 30px 0px 0px;
+        padding: 10px 0px;
+        box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.05);
+      }
 
     .mb-nav {
         position: fixed;
         bottom: 0;
         display: flex;
         width: 100%;
+        height: 60px;
         justify-content: space-between;
         align-items: center;
         background-color: var(--white);
         z-index: 99;
-        overflow: hidden;
-        border-top-left-radius: 20px;
-        border-top-right-radius: 20px;
-        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+        padding: 10px 0px;
+       
+        border-radius: 30px 30px 0px 0px;
+        box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.05);
     }
 
     .mb-nav-item {
@@ -676,30 +690,41 @@ section {
         padding: 1rem 0;
     }
 
-    .mb-nav-item i,
-    .mb-nav-item a {
-        font-size: 2rem;
-        color: var(--secon-color);
-        z-index: 2;
-        transition: .5s ease-in-out;
-    }
+   
+    .mb-nav button {
+        width: 60px;
+        height: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: 0px;
+        background: transparent;
+        border-radius: 20px;
+        transition: all 0.25s ease;
+      }
+      .mb-nav button:active:not(.float) {
+        transform: scale(1.2);
+      }
+      .mb-nav button.float {
+        margin-top: -50px;
+        background: rgb(232, 76, 79);
+        color: #fff;
+        border-radius: 25px;
+        height: 60px;
+        box-shadow: 0px 10px 20px 0px rgba(232, 76, 79, 0.4);
+      }
+      .mb-nav button.active {
+        color: rgb(232, 76, 79);
+      }
+      .mb-nav button i {
+        font-size: 1.7rem;
+        pointer-events: none;
+      }
 
     .mb-nav-item.active i {
-        color: var(--white);
+        color: red;
     }
-
-    .mb-move-item {
-        position: absolute;
-        left: 0;
-        width: 18%;
-        height: 80%;
-       margin-left: 12px;
-       background-color: var(--primary-color);
-       box-shadow: 0px 10px 20px 0px rgba(232, 76, 79, 0.4);
-       border-radius: 20px;
-        transition: 0.5s ease-in-out;
-    }
-
+   
     /* END MOBILE NAV */
 
     .col-xs-1 {
@@ -929,6 +954,7 @@ section {
     color: rgb(255, 255, 255);
     width: 160px;
     height: 40px;
+    margin-top: -20px;
     margin-bottom: 10px;
     font-size: 25px;
     border-radius: 20px;
