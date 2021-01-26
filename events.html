@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Bootstrap Example</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <script src="https://unpkg.com/boxicons@latest/dist/boxicons.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .event-cardsec {
+            margin-top: 90px;
+            font-size: 60px;
+            text-align: center;
+            font-weight: bold;
+            
+        }
+
+        .event-slog{
+            color:  rgb(232, 76, 79);
+            
+        }
+        .event-cards {
+            
+            padding-bottom: 100px;
+        }
+
+        .detail-card {
+            border-radius: 20px;
+            width: 300px;
+            padding: 10px;
+            margin-top: -25px;
+        }
+
+        .event-name {
+            font-size: 20px;
+            font-weight: 600;
+            text-align: start;
+
+        }
+
+        .event-tym {
+            text-align: right;
+            font-size: 15px;
+        }
+
+        .event-cards img {
+            border-radius: 20px;
+        }
+
+        /* Bottom */
+
+        .modal.bottom.fade .modal-dialog {
+            bottom: -100%;
+            -webkit-transition: opacity 0.3s linear, bottom 0.3s ease-out;
+            -moz-transition: opacity 0.3s linear, bottom 0.3s ease-out;
+            -o-transition: opacity 0.3s linear, bottom 0.3s ease-out;
+            transition: opacity 0.3s linear, bottom 0.3s ease-out;
+        }
+
+        .modal.bottom.fade.show .modal-dialog {
+            bottom: 0;
+        }
+
+        .modal.bottom.fade .modal-dialog {
+            bottom: -100%;
+        }
+        .modal-body p{
+            font-size: 20px;
+        }
+        .modal-title{
+            text-align: center;
+            font-size: 20px;
+            font-weight: bold;
+        }
+        .event-morebtn{
+            background: rgb(232, 76, 79);
+            box-shadow: 0px 10px 20px 0px rgba(232, 76, 79, 0.4);
+            border-radius: 20px;
+            color:white;
+            font-size: 15px;
+            
+        }
+        .event-morebtn :hover{
+            background: rgb(255, 153, 154);
+            box-shadow: 0px 10px 20px 0px rgba(232, 76, 79, 0.4);
+            color:white;
+
+        }
+        .event-txt{
+            text-align: center;
+            padding: 10px;
+            font-size: 30px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="mb-nav">
+
+        <button class="active mb-navbtn">
+            <a href="index.html"><i class='bx bx-home bx-tada-hover '></i></a>
+
+        </button>
+        <button class="mb-navbtn">
+            <a href="#food-menu-section"><i class='bx bx-news bx-tada-hover'></i></a>
+        </button>
+        <button class="float mb-navbtn">
+            <a href="https://auroraweblabs.github.io/fly-high/marketplace.html"><i class='bx bx-shopping-bag'></i></a>
+        </button>
+        <button class="mb-navbtn">
+            <a href="#contact"><i class='bx bx-mail-send bx-tada-hover'></i></a>
+        </button>
+        <button class="mb-navbtn">
+            <a href="#about"><i class='bx bx-user bx-tada-hover'></i></a>
+        </button>
+    </div>
+
+    <!-- END MOBILE NAV -->
+    <!-- BACK TO TOP BTN -->
+    <a href="#home" class="back-to-top">
+        <i class="bx bxs-to-top"></i>
+    </a>
+    <!-- END BACK TO TOP BTN -->
+    <!-- TOP NAVIGATION -->
+    <div class="nav">
+        <div class="menu-wrap">
+            <a href="#home">
+                <div class="logo">
+                    <img src="logongo.png">
+                </div>
+            </a>
+            <div class="menu h-xs">
+                <a href="#home">
+                    <div class="menu-item active">
+                        Home
+                    </div>
+                </a>
+                <a href="#about">
+                    <div class="menu-item">
+                        About&nbsp;us
+                    </div>
+                </a>
+                <a href="#food-menu-section">
+                    <div class="menu-item">
+                        Events
+                    </div>
+                </a>
+
+                <a href="#testimonial">
+                    <div class="menu-item">
+                        Marketplace
+                    </div>
+                </a>
+                <a href="#testimonial">
+                    <div class="menu-item">
+                        Contact&nbsp;us
+                    </div>
+                </a>
+                <a href="login/login.html">
+                    <div class="menu-item">
+                        Login
+                    </div>
+                </a>
+            </div>
+
+        </div>
+    </div>
+    <!-- END TOP NAVIGATION -->
+    <div class="event-cardsec">
+        <h1 class="font-weight-bold">
+            Our<span class="event-slog"> Events</span> 
+        </h1>
+        <p class="event-txt font-weight-normal">“Not all of us can do great things.But we can do small things with great love.”</p>
+    </div>
+    <div class="d-flex flex-wrap justify-content-around event-cards">
+       
+        <div class="eventcard" style="width:400px">
+            <img class="card-img-top" src="slide1.png" alt="Card image" style="width:100%">
+            <div class="card-body">
+                <div class="event-name"> Lorem, ipsum dolor sit amet consectetur adipisicing elit, veniam ex fuga .
+                </div></br>
+                <div class="event-tym"><i class='bx bx-calendar-heart'></i> 10 jan 2021 &nbsp; &nbsp;<i
+                        class='bx bx-time'></i> 10:00 AM</div>
+            </div>
+            <button type="button" class="btn  event-morebtn shadow-sm mb-1" data-toggle="modal"
+                data-target="#bottom_modal">View details <i class="fa fa-angle-down pl-2"></i></button>
+        </div>
+
+        <div class="eventcard" style="width:400px">
+            <img class="card-img-top" src="slide1.png" alt="Card image" style="width:100%">
+            <div class="card-body">
+                <div class="event-name"> Lorem, ipsum dolor sit amet consectetur adipisicing elit, veniam ex fuga .
+                </div></br>
+                <div class="event-tym"><i class='bx bx-calendar-heart'></i> 10 jan 2021 &nbsp; &nbsp;<i
+                        class='bx bx-time'></i> 10:00 AM</div>
+            </div>
+            <button type="button" class="btn btn-light event-morebtn shadow-sm mb-1" data-toggle="modal"
+                data-target="#bottom_modal">View details <i class="fa fa-angle-down pl-2"></i></button>
+        </div>
+
+        <div class="eventcard" style="width:400px">
+            <img class="card-img-top" src="slide1.png" alt="Card image" style="width:100%">
+            <div class="card-body">
+                <div class="event-name"> Lorem, ipsum dolor sit amet consectetur adipisicing elit, veniam ex fuga .
+                </div></br>
+                <div class="event-tym"><i class='bx bx-calendar-heart'></i> 10 jan 2021 &nbsp; &nbsp;<i
+                        class='bx bx-time'></i> 10:00 AM</div>
+            </div>
+            <button type="button" class="btn btn-light event-morebtn shadow-sm mb-1" data-toggle="modal"
+                data-target="#bottom_modal">View details <i class="fa fa-angle-down pl-2"></i></button>
+        </div>
+    </div>
+
+   
+
+    <div class="modal bottom fade" id="bottom_modal" tabindex="-1" role="dialog" aria-labelledby="bottom_modal">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Event Title</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <img class="card-img-top" src="slide1.png" alt="Card image" style="width:100%">
+
+                    <p>Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3
+                        wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt
+                        laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin
+                        coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes
+                        anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings
+                        occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard
+                        of them accusamus labore sustainable VHS.</p>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+
+
+</body>
+
+</html>

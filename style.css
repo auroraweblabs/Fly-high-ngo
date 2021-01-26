@@ -941,11 +941,12 @@ section {
   }
   
   /* Style the counter cards */
-  .card {
+  .eventcard {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-    padding: 16px;
+    
+    padding-bottom: 10px;
     text-align: center;
-    background-color: #f1f1f1;
+    background-color: white;
     border-radius: 20px;
   }
   .card img{
@@ -1119,6 +1120,9 @@ input[type=text], select, textarea {
         margin-top: -30px;
         margin-bottom: 20px;
       }
+    .eventcard{
+        margin: 10px;
+    }
 
   }
   .adscarousel{
