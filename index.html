@@ -12,10 +12,12 @@
         rel="stylesheet">
 
     <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
+    <!-- start MOBILE NAV -->
     <div class="mb-nav">
 
         <button class="active mb-navbtn">
@@ -29,39 +31,13 @@
             <a href="https://auroraweblabs.github.io/fly-high/marketplace.html"><i class='bx bx-shopping-bag'></i></a>
         </button>
         <button class="mb-navbtn">
-            <a href="#contact"><i class='bx bx-conversation bx-tada-hover'></i></a>
+            <a href="#contact"><i class='bx bx-mail-send bx-tada-hover'></i></a>
         </button>
         <button class="mb-navbtn">
             <a href="#about"><i class='bx bx-user bx-tada-hover'></i></a>
         </button>
     </div>
-    <!-- MOBILE NAV 
-    <div class="mb-nav">
-        
-        <button class="mb-nav-item active">
-            <a href="#home">
-                <i class="bx bx-home bx-md"></i>
-            </a>
-        </div>
-        <div class="mb-nav-item">
-            <a href="#about">
-                <i class='bx bxs-wink-smile'></i>
-            </a>
-        </div>
-        <button class="float-bottom-navbtn">
-            <a href="uploadpost.html"><i class='bx bx-plus'></i></a>
-        </button>
-        <div class="mb-nav-item">
-            <a href="#food-menu-section">
-                <i class='bx bx-news bx-md'></i>
-            </a>
-        </div>
-        <div class="mb-nav-item">
-            <a href="#testimonial">
-                <i class='bx bxs-comment-detail'></i>
-            </a>
-        </div>
-    </div>
+
     <!-- END MOBILE NAV -->
     <!-- BACK TO TOP BTN -->
     <a href="#home" class="back-to-top">
@@ -233,98 +209,95 @@
     </section>
     <!-- END SECION ABOUT -->
 
-    <!--SOCIAL PLATFORM SECTION-->
-    <div class="socialplatform">
-        <div class="socialplatform">
+
+    <!--carousel start-->
+    <!-- Flickity HTML init -->
+    <div class="adscarousel">
+
+        <div class="ads-slogan">
             <h1>
-               <span class="socialspan"> Visit Our <span class="primary-color"> Women's Marketplace</span>
-            </span>
+                <span class="primary-color slog">Discover</span>
             </h1>
-            <div class="marketplace">
-                
-                <img src="marketad3.png" class="marketplacebanner " alt="Avatar" style="width:100%">
-            </div>
-            <a href="https://auroraweblabs.github.io/fly-high/marketplace.html"><button class="btn-readmore2">
-                Visit Now
-            </button></a>
+        </div>
+        <div class="carousel"
+            data-flickity='{ "autoPlay": true , "wrapAround": true, "pageDots": false, "prevNextButtons": false }'>
+
+            <img src="slide1.png">
+            <img src="slide2.png">
+            <img src="slide3.png">
+            <img src="slide4.png">
+            <img src="slide5.png">
+        </div>
+    </div>
+
+    <!--carousel end-->
+
+    <!--SOCIAL PLATFORM SECTION-->
+    <div class="food-category"> </div>
+    <div class="row">
+        <div class="columnsocial">
+            <h1>
+                <div class="socialspan"> Visit Our<span class="primary-color"> Women's Marketplace</span>
+                </div>
+            </h1>
+            <img src="marketad3.png" class="marketplacebanner " alt="Avatar">
+            <div class="visitbtn"><a href="https://auroraweblabs.github.io/fly-high/marketplace.html"><button
+                        class="btn-readmore2">
+                        Visit Now
+                    </button></a></div>
         </div>
 
+
+        <div class="columnsocial">
+            <h1>
+                <div class="socialspan">Our<span class="primary-color"> Events</span>
+                </div>
+            </h1>
+            <img src="marketad3.png" class="marketplacebanner " alt="Avatar">
+            <div class="visitbtn"><a href="https://auroraweblabs.github.io/fly-high/marketplace.html"><button
+                        class="btn-readmore2">
+                        Visit Now
+                    </button></a></div>
+        </div>
     </div>
     <!--END SOCIAL PLATFORM SECTION-->
 
-    <!-- FOOD EVENTS SECTION -->
-    <section class="align-items-center bg-img bg-img-fixed" id="food-menu-section">
-        <div class="container">
-            <div class="food-menu">
-                <h1>
-                    Our<span class="primary-color"> Events</span>
-                </h1>
-                <p>
-                    “It’s not how much we give but how much love we put into giving.”
-                    </br>
-                    <span class="event-txt">– Mother Teresa</span>
-                </p>
-                <div class="food-category"> </div>
-                <div class="row events-card">
-                    <div class="column">
-                        <div class="card">
-                            <img src="event.jpg" alt="Avatar" style="width:100%">
-                            <div class="container">
-                                <p>Education Support</p>
-                                <span>“ONE NATION, WORK AS ONE” – एक राष्ट्र के लिए एक होके काम करने के उद्देश्य को आगे
-                                    ले जाने के लिए
-                                    हमरे फाउंडेशन के वॉलिंटियर की तरफ से *गरीब बच्चो को भी शिक्षा मिले*. ऐसी सोच को
-                                    बढ़ावा देने के लिए एवम् गरीब बच्चो का
-                                    अच्छा हो इस लिए पढ़ेगा गुजरात तभी तो बढेगा गुजरात की सोच को लोगो तक पोहचने की
-                                    जिम्मेदारी
-                                    हमरे फाउंडेशन ने ली हे. आइए इसको सब आगे बढ़ाए.
-                                    और अपना योगदान दे.
-                                </span></br>
-                                <a href="#about"><button class="btn-readmore">
-                                        Read more
-                                    </button></a>
-                            </div>
+    <section class="contact-sec" id="contact">
 
-                        </div>
-                    </div>
-
-                    <div class="column">
-                        <div class="card">
-                            <img src="event.jpg" alt="Avatar" style="width:100%">
-                            <div class="container">
-                                <p>Education Support</p>
-                                <span>“ONE NATION, WORK AS ONE” – एक राष्ट्र के लिए एक होके काम करने के उद्देश्य को आगे
-                                    ले जाने के लिए
-                                    हमरे फाउंडेशन के वॉलिंटियर की तरफ से *गरीब बच्चो को भी शिक्षा मिले*. ऐसी सोच को
-                                    बढ़ावा देने के लिए एवम् गरीब बच्चो का
-                                    अच्छा हो इस लिए पढ़ेगा गुजरात तभी तो बढेगा गुजरात की सोच को लोगो तक पोहचने की
-                                    जिम्मेदारी
-                                    हमरे फाउंडेशन ने ली हे. आइए इसको सब आगे बढ़ाए.
-                                    और अपना योगदान दे.
-                                    </br>
-                                </span>
-                                <a href="#about"><button class="btn-readmore">
-                                        Read more
-                                    </button></a>
-                            </div>
-
-                        </div>
-                    </div>
-                </div>
-
-
-            </div>
-            <a href="events.html"><button class="btn-readmore1">
-                    View all
-                </button></a>
-
+        <div class="about-slogan">
+            <h1>
+                <span class="primary-color slog">Contact</span> us
+            </h1>
         </div>
+
+        <div class="contact-container">
+            <form action="">
+                <label for="fname" class="contact-text">First Name</label>
+                <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+                <label for="lname" class="contact-text">Last Name</label>
+                <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+                <label for="country" class="contact-text">About</label>
+                <select id="country" name="country">
+                    <option value="australia">Marketplace</option>
+                    <option value="canada">Social Platform</option>
+                    <option value="usa">other</option>
+                </select>
+
+                <label for="subject" class="contact-text">Subject</label>
+                <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+
+
+                <button type="submit">Submit&nbsp;&nbsp;<i class='bx bx-send bx-flip-vertical bx-sm'
+                        style='color:#ffffff'></i>
+                </button>
+            </form>
+        </div>
+
     </section>
-    <!-- END EVENTS SECTION -->
 
-
-    
-<!--faq
+    <!--faq
     <div class="con-accordion">
         <div class="accordion-item">
             <header onclick="handleClick(event)">
@@ -399,7 +372,7 @@
             <div class="row">
                 <div class="col-6 col-xs-12">
                     <h1>
-                        FLY HIGH 
+                        FLY HIGH
                     </h1>
                     <br>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt, quas harum? Atque eius
@@ -410,40 +383,8 @@
                     <p>Phone: +00 123 456 789</p>
                     <p>Website: flyhigh.com</p>
                 </div>
-                <div class="col-2 col-xs-12">
-                    <h1>
-                        About us
-                    </h1>
-                    <br>
-                    <p>
-                        <a href="#">
-                        Events
-                        </a>
-                    </p>
-                    <p>
-                        <a href="#">
-                            Marketplace
-                        </a>
-                    </p>
-                    <p>
-                        <a href="#">
-                            Testimonials
-                        </a>
-                    </p>
-                    <p>
-                        <a href="#">
-                            FAQ
-                        </a>
 
-                    </p>
-                    <p>
-                        <a href="#">
-                            Contact us
-                        </a>
-                        
-                    </p>
-                </div>
-                <div class="col-4 col-xs-12">
+                <div class="col-6 col-xs-12">
                     <h1>
                         Subscribe & media
                     </h1>
@@ -464,6 +405,8 @@
     <!-- END FOOTER SECTION -->
 
     <script src="index.js"></script>
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+    <script src="https://unpkg.com/boxicons@latest/dist/boxicons.js"></script>
 </body>
 
 </html>
