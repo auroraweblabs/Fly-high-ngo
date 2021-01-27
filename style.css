@@ -389,6 +389,7 @@ section {
     color: black;
     margin-top: -150px;
     padding: 20px;
+    padding-bottom: 50px;
 }
 
 .footer h1 {
@@ -1121,8 +1122,9 @@ input[type=text], select, textarea {
         margin-bottom: 20px;
       }
     .eventcard{
-        margin: 10px;
+        margin: 15px;
     }
+    
 
   }
   .adscarousel{

@@ -18,15 +18,16 @@
             font-size: 60px;
             text-align: center;
             font-weight: bold;
-            
+
         }
 
-        .event-slog{
-            color:  rgb(232, 76, 79);
-            
+        .event-slog {
+            color: rgb(232, 76, 79);
+
         }
+
         .event-cards {
-            
+
             padding-bottom: 100px;
         }
 
@@ -54,7 +55,7 @@
         }
 
         /* Bottom */
-
+        
         .modal.bottom.fade .modal-dialog {
             bottom: -100%;
             -webkit-transition: opacity 0.3s linear, bottom 0.3s ease-out;
@@ -70,32 +71,37 @@
         .modal.bottom.fade .modal-dialog {
             bottom: -100%;
         }
-        .modal-body p{
+
+        .modal-body p {
             font-size: 20px;
         }
-        .modal-title{
+
+        .modal-title {
             text-align: center;
             font-size: 20px;
             font-weight: bold;
         }
-        .event-morebtn{
+
+        .event-morebtn {
             background: rgb(232, 76, 79);
             box-shadow: 0px 10px 20px 0px rgba(232, 76, 79, 0.4);
             border-radius: 20px;
-            color:white;
+            color: white;
             font-size: 15px;
-            
-        }
-        .event-morebtn :hover{
-            background: rgb(255, 153, 154);
-            box-shadow: 0px 10px 20px 0px rgba(232, 76, 79, 0.4);
-            color:white;
 
         }
-        .event-txt{
+
+        .event-morebtn :hover {
+            background: rgb(255, 153, 154);
+            box-shadow: 0px 10px 20px 0px rgba(232, 76, 79, 0.4);
+            color: white;
+
+        }
+
+        .event-txt {
             text-align: center;
             padding: 10px;
-            font-size: 30px;
+            font-size: 20px;
         }
     </style>
 </head>
@@ -137,7 +143,7 @@
             </a>
             <div class="menu h-xs">
                 <a href="#home">
-                    <div class="menu-item active">
+                    <div class="menu-item ">
                         Home
                     </div>
                 </a>
@@ -146,8 +152,8 @@
                         About&nbsp;us
                     </div>
                 </a>
-                <a href="#food-menu-section">
-                    <div class="menu-item">
+                <a href="events.html ">
+                    <div class="menu-item active">
                         Events
                     </div>
                 </a>
@@ -174,37 +180,44 @@
     <!-- END TOP NAVIGATION -->
     <div class="event-cardsec">
         <h1 class="font-weight-bold">
-            Our<span class="event-slog"> Events</span> 
+            Our<span class="event-slog"> Events</span>
         </h1>
-        <p class="event-txt font-weight-normal">“Not all of us can do great things.But we can do small things with great love.”</p>
+        <p class="event-txt font-weight-normal">“Not all of us can do great things.But we can do small things with great
+            love.”</p>
     </div>
     <div class="d-flex flex-wrap justify-content-around event-cards">
-       
-        <div class="eventcard" style="width:400px">
+
+        <div class="eventcard border" style="width:400px">
             <img class="card-img-top" src="slide1.png" alt="Card image" style="width:100%">
             <div class="card-body">
                 <div class="event-name"> Lorem, ipsum dolor sit amet consectetur adipisicing elit, veniam ex fuga .
-                </div></br>
-                <div class="event-tym"><i class='bx bx-calendar-heart'></i> 10 jan 2021 &nbsp; &nbsp;<i
-                        class='bx bx-time'></i> 10:00 AM</div>
+                </div>
+                <div class="d-flex event-tym">
+                    <div class="p-2 mr-auto "><i class='bx bxs-map'></i> MUMBAI</div>
+                    <div class="p-2"><i class='bx bx-calendar-heart'></i> 10 jan 2021</div>
+                    <div class="p-2"><i class='bx bx-time'></i> 10:00 AM</div>
+                </div>
+
+
             </div>
             <button type="button" class="btn  event-morebtn shadow-sm mb-1" data-toggle="modal"
                 data-target="#bottom_modal">View details <i class="fa fa-angle-down pl-2"></i></button>
         </div>
 
-        <div class="eventcard" style="width:400px">
+        <div class="eventcard border" style="width:400px">
             <img class="card-img-top" src="slide1.png" alt="Card image" style="width:100%">
             <div class="card-body">
                 <div class="event-name"> Lorem, ipsum dolor sit amet consectetur adipisicing elit, veniam ex fuga .
                 </div></br>
                 <div class="event-tym"><i class='bx bx-calendar-heart'></i> 10 jan 2021 &nbsp; &nbsp;<i
                         class='bx bx-time'></i> 10:00 AM</div>
+
             </div>
             <button type="button" class="btn btn-light event-morebtn shadow-sm mb-1" data-toggle="modal"
                 data-target="#bottom_modal">View details <i class="fa fa-angle-down pl-2"></i></button>
         </div>
 
-        <div class="eventcard" style="width:400px">
+        <div class="eventcard border" style="width:400px">
             <img class="card-img-top" src="slide1.png" alt="Card image" style="width:100%">
             <div class="card-body">
                 <div class="event-name"> Lorem, ipsum dolor sit amet consectetur adipisicing elit, veniam ex fuga .
@@ -217,7 +230,7 @@
         </div>
     </div>
 
-   
+
 
     <div class="modal bottom fade" id="bottom_modal" tabindex="-1" role="dialog" aria-labelledby="bottom_modal">
         <div class="modal-dialog" role="document">
@@ -239,7 +252,14 @@
                         occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard
                         of them accusamus labore sustainable VHS.</p>
                 </div>
-                
+                <div class="modal-footer">
+                    <div class="d-flex event-tym">
+                        <div class="p-2 mr-auto "><i class='bx bxs-map'></i> MUMBAI</div>
+                        <div class="p-2"><i class='bx bx-calendar-heart'></i> 10 jan 2021</div>
+                        <div class="p-2"><i class='bx bx-time'></i> 10:00 AM</div>
+                    </div>
+                </div>
+
             </div>
         </div>
     </div>
