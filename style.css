@@ -19,7 +19,7 @@ a {
 
 body,
 html {
-    background-color: rgb(255, 227, 227)
+    background-color: white;
     scroll-behavior: smooth;
     position: relative;
     overflow-x: hidden;
@@ -389,7 +389,10 @@ section {
     color: black;
     margin-top: -150px;
     padding: 20px;
-    padding-bottom: 50px;
+    padding-bottom: 80px;
+}
+.copyright{
+    text-align: center;
 }
 
 .footer h1 {
